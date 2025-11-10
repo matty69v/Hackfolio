@@ -16,7 +16,7 @@ github:
 # Timezone
 timezone: Europe/Paris
 
-# Theme
+# Theme - Using remote theme for GitHub Pages compatibility
 remote_theme: cotes2020/jekyll-theme-chirpy
 
 # Pagination
