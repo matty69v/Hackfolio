@@ -1,0 +1,93 @@
+# Site settings
+title: "TryHackMe Writeups"
+tagline: "CTF Writeups & Cybersecurity Blog"
+description: "A collection of detailed TryHackMe writeups covering web exploitation, privilege escalation, and penetration testing techniques."
+url: "https://matty69v.github.io"  # Changez ceci avec votre username GitHub
+baseurl: ""
+
+# Author information
+author: "Matty"
+avatar: "/assets/img/avatar.jpg"  # Optionnel
+
+# Social links (optionnel)
+github:
+  username: "matty69v"  # Changez ceci
+
+# Timezone
+timezone: Europe/Paris
+
+# Theme
+theme: jekyll-theme-chirpy
+remote_theme: cotes2020/jekyll-theme-chirpy
+
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"
+
+# Comments (optionnel - Giscus recommandé)
+comments:
+  active: false  # Mettez 'giscus' si vous voulez des commentaires
+  
+# Analytics (optionnel)
+google_analytics:
+  id: ""  # Ajoutez votre ID si vous voulez
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Collections
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: "_tabs"
+    values:
+      layout: page
+      permalink: /:title/
+
+# Sass
+sass:
+  style: compressed
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Archives
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
+
+# Exclude from processing
+exclude:
+  - .git
+  - .gitignore
+  - README.md
+  - vendor
+
+# Files to include
+include:
+  - _pages
