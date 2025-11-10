@@ -6,10 +6,9 @@ categories: [TryHackMe]
 tags: [web, wordpress, wpscan, file disclosure, rce, backdoor, php, mysql, john, hash, pam, zip]
 render_with_liquid: false
 image:
-  path: room_image.webp
+  path: /images/tryhackme_smol/room_image.webp
 ---
 
-date: 2024-11-04 00:00:00 +0100
 **Smol** started by enumerating a **WordPress** instance to discover a plugin with a **file disclosure** vulnerability. This vulnerability allowed us to identify a backdoor in another plugin, which we then exploited to gain a shell.
 
 After obtaining the shell, we performed several privilege escalation steps to reach the **root** user. First, we cracked hashes from the database. Next, we read a private **SSH** key for a user. Then, we exploited a **PAM** rule for **su**. After that, we cracked the password for a **ZIP** archive to retrieve a password. Finally, we leveraged **sudo** privileges to escalate to **root**.

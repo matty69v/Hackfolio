@@ -6,10 +6,9 @@ categories: [TryHackMe]
 tags: [web, request smuggling, websocket, proxy]
 render_with_liquid: false
 image:
-  path: room_image.webp
+  path: /images/tryhackme_el-bandito/room_image.webp
 ---
 
-date: 2024-05-20 00:00:00 +0100
 [![Tryhackme Room Link](/images/tryhackme_el_bandito/room_card.webp)](https://tryhackme.com/r/room/elbandito){: .right }
 
 El Bandito was a room dedicated to request smuggling, where we used two different methods of request smuggling to capture two flags.

@@ -6,10 +6,9 @@ categories: [TryHackMe]
 tags: [web, ffuf, fuzz, ssrf, kernel exploit, firefox]
 render_with_liquid: false
 image:
-  path: room_image.webp
+  path: /images/tryhackme_the-london-bridge/room_image.webp
 ---
 
-date: 2024-11-18 00:00:00 +0100
 The London Bridge began with fuzzing a web application to discover an endpoint. By fuzzing this endpoint for parameters, we identified one vulnerable to SSRF. Using this vulnerability to enumerate internal applications, we discovered another web application. After fuzzing the internal web application, we found an SSH key, which allowed us to obtain a shell. Once we had a shell, we utilized a kernel exploit to escalate our privileges to root. We ended the room by dumping the saved credentials from a user's Firefox profile to retrieve their password.
 
 [![Tryhackme Room Link](/images/tryhackme_the_london_bridge/room_card.webp)](https://tryhackme.com/r/room/thelondonbridge){: .center }

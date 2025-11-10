@@ -6,10 +6,9 @@ categories: [TryHackMe]
 tags: [web, js, jwt, fuzzing, mass assignment, api, ssrf, ssti, rabbitmq, erlang]
 render_with_liquid: false
 image:
-  path: room_image.webp
+  path: /images/tryhackme_rabbit-store/room_image.webp
 ---
 
-date: 2024-09-30 00:00:00 +0100
 **Rabbit Store** started with exploiting a **mass assignment vulnerability** to register an activated account, granting access to an API endpoint vulnerable to **SSRF**. Leveraging this **SSRF** vulnerability, we accessed the **API** documentation and discovered another endpoint vulnerable to **SSTI**, which we exploited to achieve **RCE** and gain a shell.
 
 After obtaining a shell, we retrieved the **Erlang cookie**, which allowed us to enumerate the **RabbitMQ** instance and discover the password for the **root** user, ultimately completing the challenge.

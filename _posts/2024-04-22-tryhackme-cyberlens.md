@@ -6,10 +6,9 @@ categories: [TryHackMe]
 tags: [web, windows, rce, command injection, privilege esclation]
 render_with_liquid: false
 image:
-  path: room_image.webp
+  path: /images/tryhackme_cyberlens/room_image.webp
 ---
 
-date: 2024-04-22 00:00:00 +0100
 CyberLens included using a command injection vulnerability in Apache Tika to get a foothold and abuse AlwaysInstallElevated to escalate to Administrator.
 
 [![Tryhackme Room Link](/images/tryhackme_cyberlens/room_card.webp)](https://tryhackme.com/r/room/cyberlensp6){: .center }
@@ -207,7 +206,6 @@ PS C:\Users\CyberLens\Documents\Management> whoami /groups
 GROUP INFORMATION
 -----------------
 
-date: 2024-04-22 00:00:00 +0100
 Group Name                             Type             SID          Attributes                                        
 ====================================== ================ ============ ==================================================
 Everyone                               Well-known group S-1-1-0      Mandatory group, Enabled by default, Enabled group

@@ -6,10 +6,9 @@ categories: [TryHackMe]
 tags: [web, php, crypto, hashing, python]
 render_with_liquid: false
 image:
-  path: room_image.webp
+  path: /images/tryhackme_crypto-failures/room_image.webp
 ---
 
-date: 2024-04-15 00:00:00 +0100
 **Crypto Failures** began by discovering the source code of the web application and examining it to understand the authentication functionality, which we then used to log in as the admin user. Afterward, we leveraged the same authentication functionality to brute-force a secret key used within it to complete the room.
 
 [![Tryhackme Room Link](/images/tryhackme_crypto_failures/room_card.webp)](https://tryhackme.com/room/cryptofailures){: .center }

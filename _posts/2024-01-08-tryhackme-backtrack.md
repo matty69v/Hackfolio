@@ -6,10 +6,9 @@ categories: [TryHackMe]
 tags: [web, path traversal, file disclosure, tomcat, sudo, insecure file upload, php, tty]
 render_with_liquid: false
 image:
-  path: room_image.webp
+  path: /images/tryhackme_backtrack/room_image.webp
 ---
 
-date: 2024-01-08 00:00:00 +0100
 **Backtrack** began by exploiting a **path traversal vulnerability** to read files on the server, which led to the discovery of **Tomcat credentials**. With these credentials, we used **Tomcat** to obtain a shell. After that, by exploiting a **wildcard** in a sudo command with a **path traversal payload**, we executed a malicious **Ansible playbook** to switch to another user. 
 
 As this user, we were able to find the credentials for an **internal web server** and exploited an **insecure file upload** to upload a **PHP web shell**, which we used to obtain a shell as a different user. While examining the running processes as this user, we noticed that the **root** user was switching to our current user without allocating a new **pseudo-terminal (pty)** to execute some commands. Recognizing this, we exploited **TTY pushback** to gain a shell as the **root** user.

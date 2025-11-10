@@ -6,10 +6,9 @@ categories: [TryHackMe]
 tags: [web, fuzz, vhost, ffuf, hydra, brute-force, cron, sstv, steganography]
 render_with_liquid: false
 image:
-  path: room_image.webp
+  path: /images/tryhackme_nanocherryctf/room_image.webp
 ---
 
-date: 2024-09-02 00:00:00 +0100
 NanoCherryCTF included collecting three parts of a password by gaining access to the machine as three different users. We gained first part by brute-forcing a login page, second part by fuzzing, and third part by abusing a cronjob. After collecting all the parts, we were able to use them to get to another user, which allowed us to read an audio file. Decoding the SSTV transmission inside it, we got a password and used it to gain root access.
 
 [![Tryhackme Room Link](/images/tryhackme_nanocherryctf/room_card.webp)](https://tryhackme.com/r/room/nanocherryctf){: .center }

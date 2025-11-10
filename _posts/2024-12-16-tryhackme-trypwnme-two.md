@@ -6,10 +6,9 @@ categories: [TryHackMe]
 tags: [python, ghidra, pwn, gdb, binary exploitation, shellcode, format string attack, heap, rop]
 render_with_liquid: false
 image:
-  path: room_image.webp
+  path: /images/tryhackme_trypwnme-two/room_image.webp
 ---
 
-date: 2024-12-16 00:00:00 +0100
 **TryPwnMe Two** was a continuation of the [**TryPwnMe One**](/posts/tryhackme-trypwnme_one) room, featuring four additional **binary exploitation (pwn)** challenges. These challenges included **shellcode encoding**, **format string attacks**, **heap exploitation**, and **building ROP chains**.
 
 [![Tryhackme Room Link](/images/tryhackme_trypwnme_two/room_card.webp)](https://tryhackme.com/r/room/trypwnmetwo){: .center }

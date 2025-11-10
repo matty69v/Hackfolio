@@ -6,10 +6,9 @@ categories: [TryHackMe]
 tags: [web, sql injection, mysql, python]
 render_with_liquid: false
 image:
-  path: room_image.webp
+  path: /images/tryhackme_rabbit-hole/room_image.webp
 ---
 
-date: 2024-09-23 00:00:00 +0100
 **Rabbit Hole** was a room about exploiting a **second-order SQL injection** vulnerability to extract the currently running queries from the database. The goal was to discover a password embedded in a **SQL** query and use it with `SSH` to gain a shell and capture the flag.
 
 [![Tryhackme Room Link](/images/tryhackme_rabbit_hole/room_card.webp)](https://tryhackme.com/r/room/rabbitholeqq){: .center }

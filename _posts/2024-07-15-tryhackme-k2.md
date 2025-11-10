@@ -6,10 +6,9 @@ categories: [TryHackMe]
 tags: [web, windows, active directory, ffuf, vhost, xss, sqli, ssh, adm, log, netexec, kerbrute, winrm, brute-force, secretsdump, bloodhound, responder, rbcd]
 render_with_liquid: false
 image:
-  path: room_image.webp
+  path: /images/tryhackme_k2/room_image.webp
 ---
 
-date: 2024-07-15 00:00:00 +0100
 **K2** had us solve three machines in sequence, using our findings from the previous machines to tackle the next one.
 
 We began with **Base Camp**, where we targeted a web application and discovered several virtual hosts through fuzzing. By exploiting an **XSS** vulnerability in one of the virtual hosts, we managed to gain access to the other one by stealing a cookie. Subsequently, we leveraged a **SQL injection** vulnerability to extract credentials from the database. We used one of these credentials to gain a shell via **SSH**. As this user, we found a password in one of the web server logs, which we used to obtain **root** access.
@@ -495,7 +494,6 @@ Checking the group memberships for the `j.smith` user in either **BloodHound** o
 GROUP INFORMATION
 -----------------
 
-date: 2024-07-15 00:00:00 +0100
 Group Name                                 Type             SID                                          Attributes
 ========================================== ================ ============================================ ===============================================================
 ...

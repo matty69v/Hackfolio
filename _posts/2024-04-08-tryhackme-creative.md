@@ -6,10 +6,9 @@ categories: [TryHackMe]
 tags: [web, ffuf, fuzzing, vhost, ssrf, ssh, john, sudo, ld_preload]
 render_with_liquid: false
 image:
-  path: room_image.webp
+  path: /images/tryhackme_creative/room_image.webp
 ---
 
-date: 2024-04-08 00:00:00 +0100
 Creative was a simple and straight-forward room. First, we discover a virtual host with an SSRF vulnerability and use it to scan for internal web servers. Upon discovering an internal web server running on port 1337 that allows us to read files from the server, we use it to read the private SSH key of a user. Cracking the passphrase for the key using john, we get a shell via SSH. After discovering the password for the user in the bash history, we abused the env_keep option for the LD_PRELOAD environment variable in sudo configuration to escalate to the root user.
 
 [![Tryhackme Room Link](/images/tryhackme_creative/room_card.webp)](https://tryhackme.com/r/room/creative){: .center }

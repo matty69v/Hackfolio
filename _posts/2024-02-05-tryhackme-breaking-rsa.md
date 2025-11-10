@@ -6,10 +6,9 @@ categories: [TryHackMe]
 tags: [web, rsa, cryptography, python, ssh]
 render_with_liquid: false
 image:
-  path: room_image.webp
+  path: /images/tryhackme_breaking-rsa/room_image.webp
 ---
 
-date: 2024-02-05 00:00:00 +0100
 Breaking RSA was a simple room about RSA, where we discover a public key on a web server along with a note stating the key is weak due to factors for modulus chosen to be numerically close. Using Fermat’s factorization method to factorize the modulus from the public key, we were able to calculate the private exponent and construct the private key. Using this private key with SSH, we were able to get a shell as root.
 
 ![Tryhackme Room Link](/images/tryhackme_breaking_rsa/room_card.webp)

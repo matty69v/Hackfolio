@@ -6,10 +6,9 @@ categories: [TryHackMe]
 tags: [web, file disclosure, gdb, suid, sudo]
 render_with_liquid: false
 image:
-  path: room_image.webp
+  path: /images/tryhackme_airplane/room_image.webp
 ---
 
-date: 2024-01-01 00:00:00 +0100
 Airplane started with discovering a file disclosure vulnerability in a web application. This vulnerability allowed us to identify another service running on a different port.<br>
 Knowing the service, we were able to exploit it to get a shell. With shell access, we leveraged a setuid (SUID) binary to escalate privileges to another user.<br>
 As this user, we could run a sudo command with a wildcard that allowed us to use a path traversal payload to escalate to root.

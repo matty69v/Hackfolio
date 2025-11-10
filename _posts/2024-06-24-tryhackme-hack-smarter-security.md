@@ -6,10 +6,9 @@ categories: [TryHackMe]
 tags: [web, file disclosure, ssh, windows, service]
 render_with_liquid: false
 image:
-  path: room_image.webp
+  path: /images/tryhackme_hack-smarter-security/room_image.webp
 ---
 
-date: 2024-06-24 00:00:00 +0100
 [![Tryhackme Room Link](/images/tryhackme_hack_smarter_security/room_card.webp)](https://tryhackme.com/room/hacksmartersecurity){: .right }
 
 <br/><br/>
@@ -333,7 +332,6 @@ tyler@HACKSMARTERSEC C:\Users\tyler>whoami /groups
 GROUP INFORMATION
 -----------------
 
-date: 2024-06-24 00:00:00 +0100
 Group Name                                                    Type             SID          Attributes
 
 ============================================================= ================ ============ ===================================
