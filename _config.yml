@@ -3,7 +3,7 @@ title: "TryHackMe Writeups"
 tagline: "CTF Writeups & Cybersecurity Blog"
 description: "A collection of detailed TryHackMe writeups covering web exploitation, privilege escalation, and penetration testing techniques."
 url: "https://matty69v.github.io"  # Changez ceci avec votre username GitHub
-baseurl: ""
+baseurl: "/TryHackMe"
 
 # Author information
 author: "Matty"
@@ -17,7 +17,6 @@ github:
 timezone: Europe/Paris
 
 # Theme
-theme: jekyll-theme-chirpy
 remote_theme: cotes2020/jekyll-theme-chirpy
 
 # Pagination
