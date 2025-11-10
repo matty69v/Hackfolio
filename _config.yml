@@ -89,7 +89,7 @@ theme_mode: dark # [light|dark]
 # e.g. 'https://cdn.com'
 cdn:
 
-
+avatar: assets/img/matty.jpeg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
